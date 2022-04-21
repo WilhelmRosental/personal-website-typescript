@@ -1,0 +1,33 @@
+{
+  "basics": {
+    "firstname": "Nathan",
+    "name": "Hallouin",
+    "birthday": "1997-10-27",
+    "location": {
+      "countryCode": "FR",
+      "address": "France",
+      "city": "Lyon"
+    },
+    "contact": {
+      "phone": "+337 69 18 13 94",
+      "email": "nathan.hallouin@ikmail.com"
+    },
+    "presentation": [
+      {
+        "locale": "en-US",
+        "label": "Fullstack developer",
+        "summary": "When I was younger, I was in charge of creating websites for my friends' projects and my first personal projects led me to tech. These first realizations initiated my passion for the field of development and new technologies. My school career contributed to develop my perseverance and my pragmatism. In spite of everything, I consider myself as a perpetual learner because I must continually assimilate fragments of this profession in constant evolution and for which it is necessary to constantly adapt."
+      },
+      {
+        "locale": "fr-FR",
+        "label": "Concepteur Développeur D'applications en Apprentissage",
+        "summary": "Étant plus jeune, je m’occupais de la création de sites web pour les projets de mon entourage et mes premiers projets personnels m’ont aiguillé vers la tech. Ces premières réalisations ont amorcé ma passion pour le domaine du développement et des nouvelles technologies.\n\nMon parcours scolaire a contribué à développer ma persévérance et mon pragmatisme. Malgré tout, je me considère comme un perpétuel apprenant car je dois continuellement assimiler des fragments de cette profession en constante évolution et pour laquelle il faut sans cesse s’adapter."
+      },
+      {
+        "locale": "de-DE",
+        "label": "Concepteur Développeur D'applications en Apprentissage",
+        "summary": "Als ich jünger war, habe ich Webseiten für die Projekte meiner Freunde erstellt und meine ersten eigenen Projekte haben mich in die Tech-Branche geführt. Diese ersten Projekte haben meine Leidenschaft für den Bereich der Entwicklung und der neuen Technologien geweckt.Meine schulische Laufbahn hat dazu beigetragen, mein Durchhaltevermögen und meinen Pragmatismus zu entwickeln. Trotzdem betrachte ich mich als einen ständigen Lernenden, denn ich muss mir immer wieder Fragmente dieses sich ständig weiterentwickelnden Berufes aneignen, in dem man sich immer wieder anpassen muss."
+      }
+    ]
+  }
+}

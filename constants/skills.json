@@ -1,0 +1,24 @@
+{
+  "skills": [
+    {
+      "slug": "android",
+      "Component": "DiAndroid",
+      "title": "Android"
+    },
+    {
+      "slug": "java",
+      "Component": "SiJava",
+      "title": "Java"
+    },  
+    {
+      "slug": "terminal",
+      "Component": "DiTerminal",
+      "title": "Scripting"
+    },
+    {
+      "slug": "git",
+      "Component": "SiGit",
+      "title": "Git"
+    }
+  ]
+}

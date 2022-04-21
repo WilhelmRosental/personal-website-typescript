@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "locale": "en-US",
+      "label": "Home",
+      "url": "#home"
+    },
+    {
+      "locale": "fr-FR",
+      "label": "Accueil",
+      "url": "#home"
+    },
+    {
+      "locale": "de-DE",
+      "label": "Startseite",
+      "url": "#home"
+    },
+    {
+      "locale": "en-US",
+      "label": "Skills",
+      "url": "#skills"
+    },
+    {
+      "locale": "fr-FR",
+      "label": "Compétences",
+      "url": "#skills"
+    },
+    {
+      "locale": "de-DE",
+      "label": "Kompetenzen",
+      "url": "#skills"
+    },
+    {
+      "locale": "en-US",
+      "label": "Projects",
+      "url": "#projects"
+    },
+    {
+      "locale": "fr-FR",
+      "label": "Projets",
+      "url": "#projects"
+    },
+    {
+      "locale": "de-DE",
+      "label": "Projekte",
+      "url": "#projects"
+    },
+    {
+      "locale": "en-US",
+      "label": "Contact",
+      "url": "#contact"
+    },
+    {
+      "locale": "fr-FR",
+      "label": "Contact",
+      "url": "#contact"
+    },
+    {
+      "locale": "de-DE",
+      "label": "Kontakt",
+      "url": "#contact"
+    }
+  ]
+}

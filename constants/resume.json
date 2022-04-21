@@ -1,0 +1,97 @@
+{
+  "work": [
+    {
+      "name": "Doranco Ecole Supérieure des Technologies Créatives",
+      "position": "Concepteur Développeur D'applications en Apprentissage",
+      "startDate": "2022-01-31",
+      "endDate": "",
+      "highlights": [],
+      "summary": null,
+      "url": "https://www.linkedin.com/company/2057843",
+      "location": "Ville de Paris, Île-de-France, France"
+    },
+    {
+      "name": "OpenClassrooms",
+      "position": "Développeur web junior",
+      "startDate": "2020-11-30",
+      "endDate": "2021-11-30",
+      "highlights": [],
+      "summary": null,
+      "url": "https://www.linkedin.com/company/554384",
+      "location": "Ville de Paris, Île-de-France, France"
+    }
+  ],
+  "education": [
+    {
+      "institution": "OpenClassrooms",
+      "area": "Informatique",
+      "studyType": "Développeur Web Junior",
+      "startDate": "2020-11-30",
+      "endDate": "2021-11-30",
+      "score": "Validé",
+      "courses": []
+    },
+    {
+      "institution": "Le Mans Université",
+      "area": "Sciences pour l'ingénieur",
+      "studyType": "",
+      "startDate": "2015-09-30",
+      "endDate": "2016-05-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Université de Rouen Normandie",
+      "area": "",
+      "studyType": "Licence IEEEA",
+      "startDate": "2018-09-30",
+      "endDate": "2019-05-31",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Doranco Ecole Supérieure des Technologies Créatives",
+      "area": "Informatique",
+      "studyType": "Concepteur Développeur D'applications en Apprentissage",
+      "startDate": "2022-01-31",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Université de Tours",
+      "area": "",
+      "studyType": "Licence Mathématiques et Informatique",
+      "startDate": "2016-09-30",
+      "endDate": "2018-05-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "JavaScript Algorithms and Data Structures",
+      "issuer": "freeCodeCamp",
+      "startDate": "2021-11-30",
+      "url": "https://freecodecamp.org/certification/wilhelm_rosental/javascript-algorithms-and-data-structures"
+    },
+    {
+      "name": "Java",
+      "issuer": "OpenClassrooms",
+      "startDate": "2020-03-31",
+      "url": "https://openclassrooms.com/fr/course-certificates/8074698328"
+    },
+    {
+      "name": "PHP & MySQL",
+      "issuer": "OpenClassrooms",
+      "startDate": "2020-03-31",
+      "url": "https://openclassrooms.com/fr/course-certificates/1573779816"
+    }
+  ],
+  "languages": [
+    {
+      "language": "fr",
+      "fluency": "Native Speaker"
+    }
+  ]
+}
