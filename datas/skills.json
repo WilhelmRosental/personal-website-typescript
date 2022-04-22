@@ -1,5 +1,22 @@
 {
-  "skills": [
+  "sectionInfos": [
+    {
+      "locale": "en-US",
+      "label": "Skills",
+      "title": "My Skills"
+    },
+    {
+      "locale": "fr-FR",
+      "label": "Compétences",
+      "title": "Mes Compétences"
+    },
+    {
+      "locale": "de-DE",
+      "label": "Kompetenzen",
+      "title": "Meine Kompetenzen"
+    }
+  ],
+  "items": [
     {
       "slug": "android",
       "Component": "DiAndroid",
@@ -9,7 +26,7 @@
       "slug": "java",
       "Component": "SiJava",
       "title": "Java"
-    },  
+    },
     {
       "slug": "terminal",
       "Component": "DiTerminal",

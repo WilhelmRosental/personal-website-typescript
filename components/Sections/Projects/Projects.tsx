@@ -15,17 +15,30 @@ import {
   SectionContainer,
 } from "../index";
 
+//datas
+import projects from "../../../datas/projects.json";
+
 //services
 import useGetRepos from "../../../services/useGetRepos";
 
-const Projects = () => {
-  const { data, error } = useGetRepos("");
+interface ProjectsProps {
+  locale: string;
+}
+
+const Projects = (props: ProjectsProps): JSX.Element => {
+  const { data, error } = useGetRepos();
 
   console.log(data); //TODO: voir les données qu'on peut utiliser
 
   return (
     <Section id="projects">
-      <SectionTitle main>Mes Projets</SectionTitle>
+      <SectionTitle>
+      {projects.sectionInfos
+          .filter((p) => p.locale === props.locale)
+          .map((sectionInfos, i) => {
+            return <>{sectionInfos.title}</>;
+          })}
+      </SectionTitle>
       <SectionDivider />
       <SectionContainer>
         <GridContainer>
@@ -33,14 +46,14 @@ const Projects = () => {
             ? data.map((p, i) => {
                 return (
                   <BlogCard key={i}>
-                    {p.image ? <Img src={p.image} /> : ""}
+                    {p.image ? <Img src={p.image} /> : null}
                     <HeaderThree title={p.name}>{p.name}</HeaderThree>
                     <Hr/>
                     <CardInfo className="card-info">{p.description}</CardInfo>
                   </BlogCard>
                 );
               })
-            : ""}
+            : null}
         </GridContainer>
       </SectionContainer>
     </Section>

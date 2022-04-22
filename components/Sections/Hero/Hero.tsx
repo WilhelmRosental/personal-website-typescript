@@ -4,22 +4,22 @@ import { Section, SectionText, SectionContainer } from "../index";
 import { Header, Name, Title, Intro, Avatar } from "./Hero.styles";
 
 import avatar from "../../../public/avatar.png";
-import datas from "../../../constants/global-datas.json";
+import hero from "../../../datas/hero.json";
 
 interface HeroProps {
   locale: string;
 }
 
-const Hero = (props : HeroProps) => {
+const Hero = (props : HeroProps): JSX.Element => {
   return (
     <>
       <Section id="home">
         <Header>
           <Name>Nathan Hallouin</Name>
           <Title>
-            {datas.basics.presentation
+            {hero.datas.presentation
               .filter((p) => p.locale === props.locale)
-              .map((presentation, i) => {
+              .map((presentation, i : number) => {
                 return <SectionText key={i}>{presentation.label}</SectionText>;
               })}
           </Title>
@@ -32,7 +32,7 @@ const Hero = (props : HeroProps) => {
             src={avatar}
           ></Avatar>
           <Intro>
-            {datas.basics.presentation
+            {hero.datas.presentation
               .filter((p) => p.locale === props.locale)
               .map((presentation, i) => {
                 return (
@@ -44,6 +44,6 @@ const Hero = (props : HeroProps) => {
       </Section>
     </>
   );
-};
+}
 
 export default Hero;

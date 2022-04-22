@@ -13,27 +13,43 @@ import {
   ListParagraph,
   ListTitle,
 } from "./Skills.styles";
-import { skills } from "../../../constants/skills.json";
 
-const Technologies = () => (
-  <Section id="skills">
-    <SectionTitle>Mes Compétences</SectionTitle>
-    <SectionDivider />
-    <SectionContainer>
-      <List>
-        {skills.map((Skill) => (
-          <ListItem key={Skill.slug}>
-            <picture>
-              <Skill.Component />
-            </picture>
-            <ListContainer>
-              <ListTitle>{Skill.title}</ListTitle>
-            </ListContainer>
-          </ListItem>
-        ))}
-      </List>
-    </SectionContainer>
-  </Section>
-);
+//datas
+import skills from "../../../datas/skills.json";
 
-export default Technologies;
+interface SkillsProps {
+  locale: string;
+}
+
+const Skills = (props: SkillsProps): JSX.Element => {
+  console.log(props.locale)
+
+  return (
+    <Section id="skills">
+      <SectionTitle>
+        {skills.sectionInfos
+          .filter((p) => p.locale === props.locale)
+          .map((sectionInfos, i) => {
+            return <>{sectionInfos.title}</>;
+          })}
+      </SectionTitle>
+      <SectionDivider />
+      <SectionContainer>
+        <List>
+          {skills.items.map((Skill) => (
+            <ListItem key={Skill.slug}>
+              <picture>
+                <Skill.Component />
+              </picture>
+              <ListContainer>
+                <ListTitle>{Skill.title}</ListTitle>
+              </ListContainer>
+            </ListItem>
+          ))}
+        </List>
+      </SectionContainer>
+    </Section>
+  );
+};
+
+export default Skills;

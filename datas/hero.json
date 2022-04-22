@@ -1,5 +1,19 @@
 {
-  "basics": {
+  "section-infos": [
+    {
+      "locale": "en-US",
+      "label": "Home"
+    },
+    {
+      "locale": "fr-FR",
+      "label": "Accueil"
+    },
+    {
+      "locale": "de-DE",
+      "label": "Startseite"
+    }
+  ],
+  "datas": {
     "firstname": "Nathan",
     "name": "Hallouin",
     "birthday": "1997-10-27",

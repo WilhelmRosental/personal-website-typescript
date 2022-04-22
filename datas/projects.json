@@ -1,0 +1,19 @@
+{
+  "sectionInfos": [
+    {
+      "locale": "en-US",
+      "label": "Projects",
+      "title": "My Projects"
+    },
+    {
+      "locale": "fr-FR",
+      "label": "Projets",
+      "title": "Mes Projets"
+    },
+    {
+      "locale": "de-DE",
+      "label": "Projekte",
+      "title": "Meine Projekte"
+    }
+  ]
+}

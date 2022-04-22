@@ -10,9 +10,9 @@ const Home: NextPage<{ locale: string }> = (props) => {
   return (
     <>
       <Hero locale={props.locale}/>
-      <Skills />
-      <Projects />
-      <Contact />
+      <Skills locale={props.locale}/>
+      <Projects locale={props.locale}/>
+      <Contact locale={props.locale}/>
     </>
   )
 }

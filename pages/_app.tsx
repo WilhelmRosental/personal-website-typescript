@@ -10,13 +10,12 @@ import globalStyles from "../styles/globals";
 import type { AppProps } from "next/app";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const { locale, locales, asPath } = useRouter();
+  const { locale } = useRouter();
   globalStyles();
 
   return (
     <>
       <Head>
-        
         <title>Nathan Hallouin</title>
       </Head>
 

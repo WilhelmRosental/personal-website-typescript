@@ -1,8 +1,7 @@
 import React from "react";
 
-import Navbar from "../components/Sections/Navbar/Navbar";
-
 import { Main } from "./Layout.styles";
+import SectionProvider from "../components/Sections/SectionProvider/SectionProvider";
 
 interface LayoutProps {
   children: React.ReactNode,
@@ -12,8 +11,11 @@ interface LayoutProps {
 export const Layout = ({ children, locale }: LayoutProps) => {
   return (
     <>
-      <Navbar locale={locale} />
-      <Main>{children}</Main>
+      <Main>
+        <SectionProvider locale={locale}>
+          {children}
+        </SectionProvider>
+      </Main>
     </>
   );
 };

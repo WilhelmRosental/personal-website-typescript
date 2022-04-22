@@ -1,0 +1,19 @@
+{
+  "sectionInfos": [
+    {
+      "locale": "en-US",
+      "label": "Contact",
+      "title": "Contact me!"
+    },
+    {
+      "locale": "fr-FR",
+      "label": "Contact",
+      "title": "Contactez-moi !"
+    },
+    {
+      "locale": "de-DE",
+      "label": "Kontakt",
+      "title": "Kontaktier mich!"
+    }
+  ]
+}
