@@ -7,7 +7,7 @@ export const useGetRepos = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
+useEffect(() => {
     fetch(API_URL, {
       headers: {
         Accept: "application/vnd.github.v3+json",

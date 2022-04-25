@@ -43,5 +43,22 @@
         "summary": "Als ich jünger war, habe ich Webseiten für die Projekte meiner Freunde erstellt und meine ersten eigenen Projekte haben mich in die Tech-Branche geführt. Diese ersten Projekte haben meine Leidenschaft für den Bereich der Entwicklung und der neuen Technologien geweckt.Meine schulische Laufbahn hat dazu beigetragen, mein Durchhaltevermögen und meinen Pragmatismus zu entwickeln. Trotzdem betrachte ich mich als einen ständigen Lernenden, denn ich muss mir immer wieder Fragmente dieses sich ständig weiterentwickelnden Berufes aneignen, in dem man sich immer wieder anpassen muss."
       }
     ]
-  }
+  },
+  "socials": [
+    {
+      "label": "Github",
+      "href": "https://github.com/WilhelmRosental",
+      "icon": "AiFillGithub"
+    },
+    {
+      "label": "Linkedin",
+      "href": "https://www.linkedin.com/in/nathan-hallouin/",
+      "icon": "AiFillLinkedin"
+    },
+    {
+      "label": "Dev",
+      "href": "https://dev.to/wilhelmrsntl",
+      "icon": "FaDev"
+    }
+  ]
 }

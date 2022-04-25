@@ -1,10 +1,9 @@
 import React from "react";
 
-import Footer from "../Footer/Footer";
-
 //datas
 import contact from "../../../datas/contact.json";
 
+//components
 import {
   Section,
   SectionDivider,
@@ -27,7 +26,6 @@ const Contact = (props: ContactProps): JSX.Element => (
     </SectionTitle>
     <SectionDivider />
     <SectionContainer></SectionContainer>
-    <Footer />
   </Section>
 );
 

@@ -1,45 +1,48 @@
 import React, { useState } from "react";
-import Tab from "../../GlobalComponents/Tab/Tab";
+
+//nav components
+import NavItem from "../../GlobalComponents/NavItem/NavItem";
+import NavContent from "../../GlobalComponents/NavContent/NavContent";
+
+//content components
+import Hero from '../Hero/Hero';
+import Skills from '../Skills/Skills';
+import Projects from '../Projects/Projects';
+import Contact from '../Contact/Contact';
 
 interface TabsProps {
   children: React.ReactNode;
   locale: string;
 }
 
-const SectionProvider = ({ children }: TabsProps) => {
-  //const [activeTab, setActiveTab] = useState<string[]>(children[0].props.title);
-  //const onClickTabItem = (tab : Array<string>) => setActiveTab(tab);
-
-  /*
-  <div className="tabs">
-        <ul className="tab-list">
-          {children ? children.map((tab : Array<string>) => {
-            const { title } = tab.props;
-
-            return (
-              <Tab
-                key={title}
-                title={title}
-                onClick={onClickTabItem}
-                active={title === activeTab ? true : false}
-              />
-            );
-          }) : null}
-        </ul>
-
-        <div className="tab-content">
-          {children ? children.map((tab : Array<string>) => {
-            if (tab.props.title !== activeTab) return undefined;
-
-            return tab.props.children;
-          }) : null}
-        </div>
-      </div>*/
-
+const SectionProvider = ({ children, locale } : TabsProps) => { 
+  const [activeTab, setActiveTab] = useState("tab1");
+ 
   return (
-    <>
-      {children}
-    </>
+    //TODO: Améliorer la structure des datas
+    <div className="Tabs">
+      <ul className="nav">
+        <NavItem title="Hero" id="tab1" activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <NavItem title="Skills" id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <NavItem title="Project" id="tab3" activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <NavItem title="Contact" id="tab4" activeTab={activeTab} setActiveTab={setActiveTab}/>
+      </ul>
+ 
+      <div className="outlet">
+        <NavContent id="tab1" activeTab={activeTab}>
+          <Hero locale={locale}/>
+        </NavContent>
+        <NavContent id="tab2" activeTab={activeTab}>
+          <Skills locale={locale}/>
+        </NavContent>
+        <NavContent id="tab3" activeTab={activeTab}>
+          <Projects locale={locale}/>
+        </NavContent>
+        <NavContent id="tab4" activeTab={activeTab}>
+          <Contact locale={locale}/>
+        </NavContent>
+      </div>
+    </div>
   );
 };
 

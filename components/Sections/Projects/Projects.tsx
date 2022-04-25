@@ -1,5 +1,6 @@
 import React from "react";
 
+//components
 import {
   BlogCard,
   CardInfo,
@@ -18,8 +19,8 @@ import {
 //datas
 import projects from "../../../datas/projects.json";
 
-//services
-import useGetRepos from "../../../services/useGetRepos";
+//hooks
+import useGetRepos from "../../../hooks/useGetRepos";
 
 interface ProjectsProps {
   locale: string;
