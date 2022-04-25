@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import NavItem from "../../GlobalComponents/NavItem/NavItem";
 import NavContent from "../../GlobalComponents/NavContent/NavContent";
 
+import { NavLinkList } from "./SectionProvider.styles";
+
 //content components
 import Hero from '../Hero/Hero';
 import Skills from '../Skills/Skills';
@@ -21,12 +23,12 @@ const SectionProvider = ({ children, locale } : TabsProps) => {
   return (
     //TODO: Améliorer la structure des datas
     <div className="Tabs">
-      <ul className="nav">
+      <NavLinkList className="nav">
         <NavItem title="Hero" id="tab1" activeTab={activeTab} setActiveTab={setActiveTab}/>
         <NavItem title="Skills" id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>
         <NavItem title="Project" id="tab3" activeTab={activeTab} setActiveTab={setActiveTab}/>
         <NavItem title="Contact" id="tab4" activeTab={activeTab} setActiveTab={setActiveTab}/>
-      </ul>
+      </NavLinkList>
  
       <div className="outlet">
         <NavContent id="tab1" activeTab={activeTab}>

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { NavLink } from "./NavItem.styles";
+
 interface NavItemProps {
     id : string,
     title : string,
@@ -13,9 +15,9 @@ const NavItem = ({ id, title, activeTab, setActiveTab } : NavItemProps) => {
   };
 
   return (
-    <li onClick={handleClick} className={activeTab === id ? "active" : ""}>
+    <NavLink onClick={handleClick} className={activeTab === id ? "active" : ""}>
       {title}
-    </li>
+    </NavLink>
   );
 };
 
