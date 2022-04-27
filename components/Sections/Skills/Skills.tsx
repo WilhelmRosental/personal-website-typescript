@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 //components
 import {
@@ -16,21 +16,20 @@ import {
   ListTitle,
 } from "./Skills.styles";
 
+//context
+import { UserContext } from "../../../layout/Layout";
+
 //datas
 import skills from "../../../datas/skills.json";
 
-interface SkillsProps {
-  locale: string;
-}
-
-const Skills = (props: SkillsProps): JSX.Element => {
-  console.log(props.locale)
+const Skills = () => {
+  const locale = useContext(UserContext);
 
   return (
     <Section id="skills">
       <SectionTitle>
         {skills.sectionInfos
-          .filter((p) => p.locale === props.locale)
+          .filter((p) => p.locale === locale)
           .map((sectionInfos, i) => {
             return <>{sectionInfos.title}</>;
           })}

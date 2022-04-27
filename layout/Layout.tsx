@@ -1,7 +1,8 @@
 import React from "react";
 
+export const UserContext = React.createContext();
+
 //components
-import { Main } from "./Layout.styles";
 import SectionProvider from "../components/Sections/SectionProvider/SectionProvider";
 import Footer from "../components/Sections/Footer/Footer";
 
@@ -12,13 +13,11 @@ interface LayoutProps {
 
 export const Layout = ({ children, locale } : LayoutProps) => {
   return (
-    <>
-      <Main>
-        <SectionProvider locale={locale}>
+    <UserContext.Provider value={locale}>
+      <SectionProvider>
           {children}
-        </SectionProvider>
-      </Main>
+      </SectionProvider>
       <Footer />
-    </>
+    </UserContext.Provider>
   );
 };

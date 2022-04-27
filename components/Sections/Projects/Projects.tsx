@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 //components
 import {
@@ -16,6 +16,9 @@ import {
   SectionContainer,
 } from "../index";
 
+//context
+import { UserContext } from "../../../layout/Layout";
+
 //datas
 import projects from "../../../datas/projects.json";
 
@@ -28,6 +31,7 @@ interface ProjectsProps {
 
 const Projects = (props: ProjectsProps): JSX.Element => {
   const { data, error } = useGetRepos();
+  const locale = useContext(UserContext);
 
   console.log(data); //TODO: voir les données qu'on peut utiliser
 
@@ -35,7 +39,7 @@ const Projects = (props: ProjectsProps): JSX.Element => {
     <Section id="projects">
       <SectionTitle>
       {projects.sectionInfos
-          .filter((p) => p.locale === props.locale)
+          .filter((p) => p.locale === locale)
           .map((sectionInfos, i) => {
             return <>{sectionInfos.title}</>;
           })}
