@@ -25,11 +25,7 @@ import projects from "../../../datas/projects.json";
 //hooks
 import useGetRepos from "../../../hooks/useGetRepos";
 
-interface ProjectsProps {
-  locale: string;
-}
-
-const Projects = (props: ProjectsProps): JSX.Element => {
+const Projects = () => {
   const { data, error } = useGetRepos();
   const locale = useContext(UserContext);
 

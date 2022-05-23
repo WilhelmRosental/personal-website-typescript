@@ -14,11 +14,7 @@ import {
 //context
 import { UserContext } from "../../../layout/Layout";
 
-interface ContactProps {
-  locale: string;
-}
-
-const Contact = (props: ContactProps): JSX.Element => {
+const Contact = () => {
   const locale = useContext(UserContext);
 
   return (

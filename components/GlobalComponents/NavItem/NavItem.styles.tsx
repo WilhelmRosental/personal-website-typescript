@@ -1,5 +1,5 @@
-import { styled } from '../../../stitches.config';
+import styled from 'styled-components'
 
-export const NavLink = styled('li', {
-    color: 'blue'
-});
+export const NavLink = styled.li`
+    color: blue;
+`

@@ -1,67 +1,67 @@
-import { styled } from '@stitches/react';
+import styled from 'styled-components'
 
-export const Section = styled('section', {
-  display: 'flex',
-  flexDirection: 'column',
-  margin: '0 auto',
-  overflow: 'hidden',
-  gridTemplateColumns: '1fr 1fr',
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: '100vh',
-  padding: '50px 0',
-  boxSizing: 'border-box',
-});
+export const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  box-sizing: border-box;
+  height: 100%;
+`
 
-export const SectionContainer = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  maxWidth: '1080px',
-  flex: '1',
-});
+export const SectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1080px;
+  flex: 1;
+`
 
-export const SectionTitle = styled('h2', {
-  display: 'flex',
-  justifyContent: 'center',
-  cursor: 'auto',
-  fontWeight: '800',
-  fontSize: '56px',
-  lineHeight: '67px',
-  width: '100%',
-  maxWidth: '100%',
-  marginBottom: '16px',
-  padding: '0',
-  margin: '0',
-});
+export const SectionTitle = styled.h2`
+  display: flex;
+  justify-content: center;
+  cursor: auto;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 67px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 16px;
+  padding: 0;
+  margin: 0;
+`
 
-export const SectionText = styled('p', {
-  maxWidth: '800px',
-  fontSize: '18px',
-  lineHeight: '30px',
-  fontWeight: '400',
-  paddingBottom: '3.6rem',
-  color: 'rgba(255, 255, 255, 0.75)',
-  cursor: 'auto',
-});
+export const SectionText = styled.p`
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  padding-bottom: 3.6rem;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: auto;
+`
 
-export const SectionDivider = styled('div', {
-  width: '100px',
-  height: '6px',
-  borderRadius: '2px',
-  backgroundColor: '#fff',
-  background: 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)',
-  margin: '0',
-  marginRight: 'auto',
-  marginLeft: 'auto',
-});
+export const SectionDivider = styled.div`
+  width: 100px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: #fff;
+  background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+`
 
-export const SectionSubText = styled('p', {
-  cursor: 'auto',
-  maxWidth: '800px',
-  fontWeight: '300',
-  fontSize: '18px',
-  lineHeight: '12px',
-  color: 'rgba(255, 255, 255, 0.75)',
-});
+export const SectionSubText = styled.p`
+  cursor: auto;
+  max-width: 800px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.75);
+`

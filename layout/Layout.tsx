@@ -1,6 +1,6 @@
 import React from "react";
 
-export const UserContext = React.createContext();
+export const UserContext = React.createContext('');
 
 //components
 import SectionProvider from "../components/Sections/SectionProvider/SectionProvider";
@@ -14,9 +14,7 @@ interface LayoutProps {
 export const Layout = ({ children, locale } : LayoutProps) => {
   return (
     <UserContext.Provider value={locale}>
-      <SectionProvider>
-          {children}
-      </SectionProvider>
+      {children}
       <Footer />
     </UserContext.Provider>
   );

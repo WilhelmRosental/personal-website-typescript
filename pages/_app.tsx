@@ -4,17 +4,17 @@ import Head from "next/head";
 
 //theme
 import { Layout } from "../layout/Layout";
-import globalStyles from "../styles/globals";
+import GlobalStyle from "../styles/globals";
 
 //props
 import type { AppProps } from "next/app";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const { locale } = useRouter();
-  globalStyles();
 
   return (
     <>
+      <GlobalStyle />
       <Head>
         <title>Nathan Hallouin</title>
       </Head>

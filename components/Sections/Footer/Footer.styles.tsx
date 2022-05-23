@@ -1,22 +1,22 @@
-import { styled } from '../../../stitches.config';
+import styled from 'styled-components'
 
-export const FooterWrapper = styled('footer', {
-  boxSizing: 'content-box',
-});
+export const FooterWrapper = styled.footer`
+  box-sizing: content-box;
+`
 
-export const CompanyContainer = styled('div', {
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'center',
-});
+export const CompanyContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`
 
-export const Slogan = styled('p', {
-  color: 'rgba(255, 255, 255, 0.5)',
-  minWidth: '280px',
-  letterSpacing: '0.02em',
-  fontSize: '18px',
-  lineHeight: '30px',
-  paddingTop: '1rem',
-  display: 'flex',
-  alignItems: 'baseline',
-});
+export const Slogan = styled.p`
+  color: rgba(255, 255, 255, 0.5);
+  min-width: 280px;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 1rem;
+  display: flex;
+  align-items: baseline;
+`

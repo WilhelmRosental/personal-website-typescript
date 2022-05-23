@@ -6,8 +6,8 @@ interface NavContentProps {
     children : React.ReactNode
 }
 
-const NavContent = ({ id, activeTab, children } : NavContentProps) => {
-  return activeTab === id ? <div className="TabContent">{children}</div> : null;
+const NavContent  = ({ id, activeTab, children } : NavContentProps) => {
+  return activeTab === id ? {children}: null;
 };
 
 export default NavContent;
