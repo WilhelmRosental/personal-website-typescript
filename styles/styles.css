@@ -1,7 +1,8 @@
-import { createGlobalStyle  } from "styled-components";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-const globalStyles = createGlobalStyle`
-  * { 
+* { 
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -24,7 +25,6 @@ const globalStyles = createGlobalStyle`
 
   #__next {
     display: flex;
-    height: 100vh;
     flex-direction: column;
   }
 
@@ -39,6 +39,3 @@ const globalStyles = createGlobalStyle`
   li {
     list-style: none;
   }
-`
-
-export default globalStyles;

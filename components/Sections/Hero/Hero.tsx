@@ -23,7 +23,7 @@ const Hero = () => {
               .filter((p) => p.locale === locale)
               .map((presentation, i: number) => {
                 return <SectionText key={i}>{presentation.label}</SectionText>;
-              })}
+            })}
           </Title>
         </Header>
         <SectionContainer>
@@ -42,6 +42,8 @@ const Hero = () => {
                 );
               })}
           </Intro>
+
+          <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
         </SectionContainer>
       </Section>
     </>

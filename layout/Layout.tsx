@@ -3,7 +3,6 @@ import React from "react";
 export const UserContext = React.createContext('');
 
 //components
-import SectionProvider from "../components/Sections/SectionProvider/SectionProvider";
 import Footer from "../components/Sections/Footer/Footer";
 
 interface LayoutProps {
