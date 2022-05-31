@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import { styled } from '@mui/material/styles'
 
-export const Button = styled.button`
+export const Button = styled('button')`
   border: none;
   width: 130px;
   height: 38px;
@@ -30,11 +30,11 @@ export const Button = styled.button`
     background-size: 400%;
     border-radius: 50px;
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
   }
-  
+
   &:hover::before {
     filter: blur(15px);
-    opacity: .8;
+    opacity: 0.8;
   }
-`;
+`

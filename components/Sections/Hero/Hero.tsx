@@ -1,17 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react'
+import Button from '@mui/material/Button'
 
 //components
-import { Section, SectionText, SectionContainer } from "../index";
-import { Header, Name, Title, Intro, Avatar } from "./Hero.styles";
+import { Section, SectionText, SectionContainer } from '../index'
+import { Header, Name, Title, Intro, Avatar } from './Hero.styles'
 
 //context
-import { UserContext } from "../../../layout/Layout";
+import { UserContext } from '../../../layout/Layout'
 
-import avatar from "../../../public/avatar.png";
-import hero from "../../../datas/hero.json";
+import avatar from '../../../public/avatar.png'
+import hero from '../../../datas/hero.json'
 
 const Hero = () => {
-  const locale = useContext(UserContext);
+  const locale = useContext(UserContext)
 
   return (
     <>
@@ -22,8 +23,8 @@ const Hero = () => {
             {hero.datas.presentation
               .filter((p) => p.locale === locale)
               .map((presentation, i: number) => {
-                return <SectionText key={i}>{presentation.label}</SectionText>;
-            })}
+                return <SectionText key={i}>{presentation.label}</SectionText>
+              })}
           </Title>
         </Header>
         <SectionContainer>
@@ -37,15 +38,15 @@ const Hero = () => {
             {hero.datas.presentation
               .filter((p) => p.locale === locale)
               .map((presentation, i) => {
-                return (
-                  <SectionText key={i}>{presentation.summary}</SectionText>
-                );
+                return <SectionText key={i}>{presentation.summary}</SectionText>
               })}
           </Intro>
+
+          <Button variant="contained">Contained</Button>
         </SectionContainer>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

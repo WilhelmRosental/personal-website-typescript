@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import { styled } from '@mui/material/styles'
 
-export const Section = styled.section`
+export const Section = styled('section')`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -13,7 +13,7 @@ export const Section = styled.section`
   height: 100%;
 `
 
-export const SectionContainer = styled.div`
+export const SectionContainer = styled('div')`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@ export const SectionContainer = styled.div`
   flex: 1;
 `
 
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled('h2')`
   display: flex;
   justify-content: center;
   cursor: auto;
@@ -36,7 +36,7 @@ export const SectionTitle = styled.h2`
   margin: 0;
 `
 
-export const SectionText = styled.p`
+export const SectionText = styled('p')`
   max-width: 800px;
   font-size: 18px;
   line-height: 30px;
@@ -46,18 +46,18 @@ export const SectionText = styled.p`
   cursor: auto;
 `
 
-export const SectionDivider = styled.div`
+export const SectionDivider = styled('div')`
   width: 100px;
   height: 6px;
   border-radius: 2px;
   background-color: #fff;
-  background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+  background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   margin: 0;
   margin-right: auto;
   margin-left: auto;
 `
 
-export const SectionSubText = styled.p`
+export const SectionSubText = styled('p')`
   cursor: auto;
   max-width: 800px;
   font-weight: 300;

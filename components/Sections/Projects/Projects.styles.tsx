@@ -1,13 +1,13 @@
-import styled from 'styled-components'
+import { styled } from '@mui/material/styles'
 
-export const Img = styled.img`
+export const Img = styled('img')`
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
 `
 
-export const GridContainer = styled.section`
+export const GridContainer = styled('section')`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   padding-top: 3rem;
@@ -17,14 +17,14 @@ export const GridContainer = styled.section`
   row-gap: 3rem;
 `
 
-export const BlogCard = styled.div`
+export const BlogCard = styled('div')`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
 `
 
-export const TitleContent = styled.div`
+export const TitleContent = styled('div')`
   text-align: center;
   z-index: 20;
   width: 100%;
@@ -34,15 +34,15 @@ export const TitleContent = styled.div`
   font-size: 1.8rem;
 `
 
-export const HeaderThree = styled.h3`
+export const HeaderThree = styled('h3')`
   font-weight: 500;
   letter-spacing: 2px;
   color: #9cc9e3;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   margin-top: 1rem;
 `
 
-export const Hr = styled.hr`
+export const Hr = styled('hr')`
   width: 50px;
   height: 3px;
   margin: 8px auto;
@@ -50,7 +50,7 @@ export const Hr = styled.hr`
   background: #d0bb57;
 `
 
-export const CardInfo = styled.p`
+export const CardInfo = styled('p')`
   width: 100%;
   padding: 0 50px;
   color: #e4e6e7;
