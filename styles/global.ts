@@ -1,6 +1,6 @@
-import { createGlobalStyle  } from "styled-components";
+import { css } from '@emotion/react'
 
-const globalStyles = createGlobalStyle`
+export const globalStyles = css`
   * { 
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +12,7 @@ const globalStyles = createGlobalStyle`
     height: 100%;
   }
   body {
-    font-family: 'Titillium Web, sans-serif';
+    font-family: 'Titillium Web';
     font-size: 1.6rem;
     background: rgb(11, 0, 26);
     color: hsl(204,23.8%,95.9%);
@@ -32,7 +32,4 @@ const globalStyles = createGlobalStyle`
   }
   li {
     list-style: none;
-  }
-`
-
-export default globalStyles; 
+  }`
