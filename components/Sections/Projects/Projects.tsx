@@ -26,10 +26,7 @@ import projects from "../../../datas/projects.json";
 import useGetRepos from "../../../hooks/useGetRepos";
 
 const Projects = () => {
-  const { data, error } = useGetRepos();
   const locale = useContext(UserContext);
-
-  console.log(data); //TODO: voir les données qu'on peut utiliser
 
   return (
     <Section id="projects">
@@ -43,18 +40,6 @@ const Projects = () => {
       <SectionDivider />
       <SectionContainer>
         <GridContainer>
-          {data
-            ? data.map((p, i) => {
-                return (
-                  <BlogCard key={i}>
-                    {p.image ? <Img src={p.image} /> : null}
-                    <HeaderThree title={p.name}>{p.name}</HeaderThree>
-                    <Hr/>
-                    <CardInfo className="card-info">{p.description}</CardInfo>
-                  </BlogCard>
-                );
-              })
-            : null}
         </GridContainer>
       </SectionContainer>
     </Section>
