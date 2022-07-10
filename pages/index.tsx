@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 
 //components
-import Hero from '../components/Sections/Hero/Hero'
+import Hero from '../components/Landing/Hero/Hero'
 
 const Home: NextPage<{ locale: string }> = (props) => {
   return (
